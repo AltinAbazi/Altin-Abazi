@@ -1,0 +1,4 @@
+{
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+    "java.debug.settings.onBuildFailureProceed": true
+}
