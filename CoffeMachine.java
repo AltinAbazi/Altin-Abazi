@@ -51,8 +51,8 @@ public class CoffeMachine {
         }
     Scanner sc2= new Scanner(System.in);
         System.out.println("Select sugar level! \n1 = no sugar \n2 = one sugar \n3 = two sugars");
-        int  sugar= sc2.nextInt();        
-        String sugar1 = "";
+            int  sugar= sc2.nextInt();        
+            String sugar1 = "";
                switch(sugar)    {
                 case 1:
                     System.out.println("No sugar");
@@ -62,15 +62,24 @@ public class CoffeMachine {
                     System.out.println("one sugar");
                     break;
                     
-                    case 1:
+                    case 3:
                     System.out.println(" three sugar");
                     break;
                     
                }
-           
-                   
+               System.out.println("=======ORDER SUMMARY=======") ;
+                System.out.println("Inserted money: "+coin);
+                System.out.println("Coffee: "+coffename);
+                System.out.println("Coffee price: "+price);
+                System.out.println("Sugar: "+sugar);
+                System.out.println("Thank you,\n\n\nEnjoy your coffe!!!");
+          
+         
+         
             }
-    }
+    
+        }
+
 
 
 
