@@ -37,7 +37,7 @@
      
      import java.util.Scanner;
 
-public class ex8 {
+public class ex {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

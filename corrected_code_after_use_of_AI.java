@@ -1,10 +1,10 @@
-
 import java.util.Scanner;
 
-public class bankomati {
+public class corrected_code_after_use_of_AI {
     public static void main(String[] args) {
 
         int balance = 100;
+        int para = 0;        // ← moved here (was inside case 1)
         int withdraw;
         int deposit;
         int yes = 1;
@@ -19,11 +19,12 @@ public class bankomati {
             case 1:
 
                 System.out.println("sa para doni te terhiqni?");
-                int para = sc.nextInt();
+                para = sc.nextInt();  // ← removed 'int'
 
                 if (para > balance) {
                     System.out.println("nuk keni aq para ne llogari\n provoni perseri");
                 } else {
+                    balance = balance - para;  // ← added
                     System.out.println("shuma juaj eshte: " + para);
                 }
 
@@ -31,7 +32,7 @@ public class bankomati {
                     System.out.println("diten e mire");
                     break;
                 }
-                break; 
+                break;
         }
 
         switch (choice) {
@@ -64,14 +65,15 @@ public class bankomati {
                                 if (para > balance) {
                                     System.out.println("nuk keni aq para ne llogari\n provoni perseri");
                                 } else {
+                                    balance = balance - para;  // ← added
                                     System.out.println("shuma juaj eshte: " + para);
                                 }
 
                                 while (true) {
                                     System.out.println("diten e mire");
-                                    break; 
+                                    break;  // ← added (infinite loop fix)
                                 }
-                                break;
+                                break;  // ← added
 
                             case 2:
                                 System.out.println("sa para doni te dpositoni?");
@@ -83,20 +85,19 @@ public class bankomati {
                                 } else {
                                     System.out.println("keni shtypur gabim!!!");
                                 }
-                                break; 
+                                break;
 
-                            case 3: {
+                            case 3:  // ← removed illegal { } wrapping
                                 System.out.println("bilanci juaj eshte :" + balance);
-                                break; 
+                                break;
 
-                                case 4:
-                                    System.out.println("Exit");
-                                    break;
+                            case 4:
+                                System.out.println("Exit");
+                                break;
 
-                                default:
-                                    System.out.println("keni shtypur gabim,ju lutem provoni perseri!");
-                                    break; 
-                            }
+                            default:
+                                System.out.println("keni shtypur gabim,ju lutem provoni perseri!");
+                                break;
                         }
                     } else {
                         System.out.println("ju lutem mereni kartelen tuaj!");
@@ -104,22 +105,22 @@ public class bankomati {
 
                     break;
                 }
+                break;
         }
 
         switch (choice) {
             case 3:
 
-                System.out.println("a deshironi te vazhdoni?");
-                Scanner sc1 = new Scanner(System.in);
+                System.out.println("bilanci juaj eshte :" + balance);  // ← show balance first
+                System.out.println("a deshironi te vazhdoni?\n po =1, jo =0");  // ← added po/jo hint
+                yes = sc.nextInt();  // ← replaced Scanner sc1 + boolean po
 
-                boolean po = sc1.nextBoolean();
-
-                if (po) {
+                if (yes == 1) {
                     System.out.println("bilanci juaj eshte :" + balance);
                 } else {
                     System.out.println("ne rregull\nditen e mire\nju lutem merni kartelen tuaj! ");
                 }
-                break; 
+                break;
         }
 
         switch (choice) {
@@ -127,7 +128,7 @@ public class bankomati {
                 System.out.println("shtypni" + 0 + " te dilni");
                 System.out.println("mereni kartelen tuaj\n\n\n");
                 System.out.println("diten e mire");
-                break; 
+                break;
         }
     }
 }
