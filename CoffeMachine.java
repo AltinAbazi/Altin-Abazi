@@ -49,16 +49,32 @@ public class CoffeMachine {
                 price = 2.00;
                 break;
         }
-        System.out.println("Select sugar level! \n1 = low \n2 = medium \n3 = high");
-            Scanner sc2= new Scanner(System.in);
+    Scanner sc2= new Scanner(System.in);
+        System.out.println("Select sugar level! \n1 = no sugar \n2 = one sugar \n3 = two sugars");
+        int  sugar= sc2.nextInt();        
+        String sugar1 = "";
+               switch(sugar)    {
+                case 1:
+                    System.out.println("No sugar");
+                    break;
 
-    
-    
+                    case 2:
+                    System.out.println("one sugar");
+                    break;
+                    
+                    case 1:
+                    System.out.println(" three sugar");
+                    break;
+                    
+               }
+           
+                   
+            }
     }
 
 
 
 
-}
+
 
 
