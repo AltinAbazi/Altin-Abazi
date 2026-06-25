@@ -1,5 +1,12 @@
 import java.util.Scanner;
 
+
+/*
+    check why switch 4 does not exists the menu. 
+    Check why required 3-4 times to enter coins.
+
+*/
+
 public class CoffeMachine {
     public static void main(String[] args) {
        Scanner sc= new Scanner(System.in);
@@ -27,7 +34,7 @@ public class CoffeMachine {
                 case 4:
                 break;            
             }
-
+  //check this logic, if the user enters 4, it should not print the balance, but it does.
      if (coin != 4) {
                 System.out.printf("Current balance:"+ balance);
             }
