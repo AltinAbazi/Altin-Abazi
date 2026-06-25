@@ -12,11 +12,10 @@ public class  CvAltinAbazi
 
         System.out.println("Enter your email adress!");
         String email =sc.nextLine();
-
-        
        
         System.out.println("Enter your birthplace!");
         String birthplace=sc.nextLine();
+        //Add this logic: First ask the user to select the school level -> Middle School, University and Master. If the user is in high school then ask school name and that's all.
 
         System.out.println("Enter your university:");
         String uni= sc.nextLine();
