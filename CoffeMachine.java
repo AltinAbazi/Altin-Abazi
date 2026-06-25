@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class CoffeMachine {
-    public static void main(String[] args) {
+    public static void main(String[] args) {{
        Scanner sc= new Scanner(System.in);
         double balance = 0;
        
@@ -23,10 +23,42 @@ public class CoffeMachine {
                 break;
                 
                 case 4:
-                break;            }
+                break;            
+            }
     
      System.out.println("Current balance: " + balance + "$");
     
-            }
+    }
+    Scanner sc1= new Scanner(System.in);
+        System.out.println("\nSelect coffee:\n1 = Americano -1.0$\n2 = Espresso-1.50$\n3 = Machiato 2.00$ ");
+            String coffename = "";
+            double price = 0;
+            int coffee = sc1.nextInt();
+        
+        switch (coffee) {
+                case 1:
+                coffename = "Americano";
+                price = 1.0;
+                break;
+                case 2:
+                coffename = "Espresso";
+                price = 1.50;
+                break;
+                case 3:
+                coffename = "Machiato";
+                price = 2.00;
+                break;
+        }
+        System.out.println("Select sugar level! \n1 = low \n2 = medium \n3 = high");
+            Scanner sc2= new Scanner(System.in);
+
+    
+    
+    }
+
+
+
 
 }
+
+
