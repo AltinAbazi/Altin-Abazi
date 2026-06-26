@@ -29,9 +29,9 @@ public static void main (String[] args){
                 break;
              }
             }
-    switch(choice){
+    switch(choice){  
         case 2:
-
+                int para=sc.nextInt();
                 System.out.println("sa para doni te dpositoni?");
                 deposit= sc.nextInt();
                 if((balance>= deposit)||(balance<= deposit)) {
@@ -63,7 +63,7 @@ public static void main (String[] args){
             while (true) {
                 System.out.println("diten e mire");
             }
-        
+                
         case 2:
                 System.out.println("sa para doni te dpositoni?");
                 deposit= sc.nextInt();
@@ -75,30 +75,24 @@ public static void main (String[] args){
                     System.out.println("keni shtypur gabim!!!");
                 }
         case 3:
-
-               
-                {
-                System.out.println("bilanci juaj eshte :"+balance);
-
-               case 4:
+            System.out.println("bilanci juaj eshte :"+balance);
+            break;
+        case 4:
              System.out.println("Exit");
              break;
              default:
             System.out.println("keni shtypur gabim,ju lutem provoni perseri!");
-            break;}
-                }else {
-                        System.out.println("ju lutem mereni kartelen tuaj!");
-                      
-                    }
+            break;
+                else {
+                System.out.println("ju lutem mereni kartelen tuaj!");
+                        break;
+                        }
                     break;
-                {
-                break;
-            }
+                }
             break;
         }
     }
-
-          
+} 
             switch(choice){
                 case 3:
 
@@ -132,9 +126,5 @@ switch(choice){
             }
         
     }
-}
-
-
-
 }
 
