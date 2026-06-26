@@ -28,7 +28,6 @@ import java.util.Scanner;
         public static void main(String[] args){
             Scanner sc =new Scanner(System.in);
                 double[] grades = new double[5];
-
                 double sum =0;
                 double highestGrade =0;
                 double passed =0;
@@ -36,23 +35,18 @@ import java.util.Scanner;
             System.out.print("Enter grade for sudent "+(i+1)+ ":");
                 grades[i] = sc.nextDouble();
                 sum += grades[i];
-        if (i == 0 || grades[i] > highestGrade) 
-            {
+        if (i == 0 || grades[i] > highestGrade) {
             highestGrade = grades[i];
             }
-        if (grades[i] >= 50) 
-            {
+        if (grades[i] >= 50) {
             passed++;
             }
             }
             System.out.println("Grades : ");
-            for (double grade : grades) 
-            {
+            for (double grade : grades) {
             System.out.print(grade + " ");
             }
-        
             double average = sum / 5;
-        
             System.out.println("\naverage grades: "+average);
             System.out.println("highest grade: "+highestGrade);
             System.out.println("passed student: "+passed);   
