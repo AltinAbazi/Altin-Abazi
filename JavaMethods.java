@@ -38,7 +38,7 @@
 // //     static int method(int x,int y) {
 // //         return y * x;
 // //     }
-    
+
 // //     public static void main(String[] args){
 // //     int z = method(49, 38);
 // //     System.out.println(z);
@@ -61,3 +61,4 @@
 // sc.close();
 // }
 // }
+//si krijojm web aplikation me jaava
