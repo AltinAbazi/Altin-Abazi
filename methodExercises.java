@@ -1,20 +1,35 @@
+
+import java.util.Scanner;
+
+
+
 public class methodExercises {
-    static int method(int x,int y){
-        x=7;
-        y=8;
+
+    
+   
+   
+    static int methodPlus(int x,int y){
         return x+y;
+           
     }
-    static double methodd(double x,double y){
-        x=7;
-        y=6;
-        
-        return x-y;
+    static int methodMinus (int x,int y){
+        return x-y;     
+    }
+    static int methodProdhimi (int x,int y){
+        return x*y;     
+    }
+    static double methodPjestimi (double x,double y){
+        return x/y;     
     }
     public static void main(String[] args){
-    System.out.println(method(7,8));
-    System.out.println(methodd(0, 0));
-
+    Scanner sc=new Scanner(System.in);
+            int x =sc.nextInt();
+            int y=sc.nextInt();
+        System.out.println("mbledhja  eshte  = " + methodPlus(x,y));
+        System.out.println("Zbirtja eshte  = " +methodMinus(x,y));
+        System.out.println("Prodhimi eshte   = " +methodProdhimi(x,y));
+        System.out.println("Ndryshimi eshte   = " +methodPjestimi(x,y));
+        
     }
-
 }
 

@@ -33,17 +33,15 @@
 // }
 
 
-// //RETURN METHOD
+//RETURN METHOD
 public class JavaMethods {
     static int method(int x,int y) {
-        x = 3;
-        y = 2;
         return y * x;
     }
 
     public static void main(String[] args){
-    
-    System.out.println(method(12,6));
+    int z = method(49, 38);
+    System.out.println(z);
    }
 }
 //  import java.util.Scanner;
