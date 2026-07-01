@@ -1,4 +1,5 @@
-
+/*here we created a method exercise to input two values and the system
+will automatically calculate the numbers*/
 import java.util.Scanner;
 
 
@@ -9,7 +10,7 @@ public class methodExercises {
    
    
     static int methodPlus(int x,int y){
-        return x+y;
+        return x+y;             
            
     }
     static int methodMinus (int x,int y){

@@ -59,7 +59,7 @@ public class bankomati {
 
                             case 1:
                                 System.out.println("sa para doni te terhiqni?");
-                                para = sc.nextInt();
+                                int para = sc.nextInt();
 
                                 if (para > balance) {
                                     System.out.println("nuk keni aq para ne llogari\n provoni perseri");
@@ -85,7 +85,7 @@ public class bankomati {
                                 }
                                 break; 
 
-                            case 3: {
+                            case 3: 
                                 System.out.println("bilanci juaj eshte :" + balance);
                                 break; 
 
@@ -98,7 +98,7 @@ public class bankomati {
                                     break; 
                             }
                         }
-                    } else {
+                     else {
                         System.out.println("ju lutem mereni kartelen tuaj!");
                     }
 

@@ -53,7 +53,7 @@ public static void main (String[] args){
                 
                     case 1:
                 System.out.println("sa para doni te terhiqni?");
-            para = sc.nextInt();
+            int para = sc.nextInt();
           
             if(para>balance){
              System.out.println("nuk keni aq para ne llogari\n provoni perseri");}
@@ -71,32 +71,32 @@ public static void main (String[] args){
                 System.out.println("parate qe i deposituat jane: "+ deposit + " ,ndersa bilanci juaj eshte: "+(balance+deposit));
                 balance = balance + deposit;}
 
-                else{
-                    System.out.println("keni shtypur gabim!!!");
-                }
+                else {System.out.println("keni shtypur gabim!!!");}
+        
         case 3:
 
                
-                {
+                
                 System.out.println("bilanci juaj eshte :"+balance);
 
                case 4:
              System.out.println("Exit");
              break;
              default:
+            
             System.out.println("keni shtypur gabim,ju lutem provoni perseri!");
-            break;}
-                }else {
+            break;
+            }{
                         System.out.println("ju lutem mereni kartelen tuaj!");
                       
                     }
                     break;
-                {
+                    }
                 break;
             }
             break;
         }
-    }
+    
 
           
             switch(choice){
@@ -136,5 +136,5 @@ switch(choice){
 
 
 
-}
+
 
