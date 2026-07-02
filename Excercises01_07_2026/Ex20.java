@@ -1,17 +1,22 @@
-// Write a Java program to make such a pattern like a right angle triangle with the number increased by 1.
+// 20. Print Floyd's Triangle
 
-// The pattern like :
+// Write a Java program to print Floyd's Triangle.
 
-// 1
-// 2 3
-// 4 5 6
+// Test Data
+// Input number of rows : 5
+// Expected Output :
+
+// Input number of rows :  5
+// 1 
+// 2 3 
+// 4 5 6 
 // 7 8 9 10 
-
+// 11 12 13 14 15
 package Excercises01_07_2026;
 
 import java.util.Scanner;
 
-public class Ex18 {
+public class Ex20 {
     static int line(int num){
         return num;
     }
@@ -19,7 +24,6 @@ public class Ex18 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Input number of rows : ");
         int n = sc.nextInt();
-
         int num = 1;
         for(int i = 1; i <= n; i++){
             for(int j = 1; j <= i; j++){
