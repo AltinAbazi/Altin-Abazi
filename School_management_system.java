@@ -67,6 +67,7 @@ public class School_management_system {
         }    
     class teacher extends School_management_system{
         private String subject;
+            
             public teacher(String name,int age,String subject){
                 super(name,age);
                 this.subject=subject;
@@ -74,7 +75,7 @@ public class School_management_system {
             public String getsubject(){
                 return subject;
             }
-            public void stesubject(String subject){
+            public void setsubject(String subject){
                 this.subject=subject;
             }
     @Override
