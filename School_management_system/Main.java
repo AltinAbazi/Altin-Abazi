@@ -8,8 +8,9 @@ class Main{
                 new Student("Veton",19,"133879"),
                 new Teacher("Imer",30,"Structural Programming"),
             };
-                for(Person person :directory){
-                person.introduce();
-            }
+                directory[0].introduce();
+                directory[1].introduce();
+                directory[2].introduce();
+                directory[3].introduce();
         }
     }
