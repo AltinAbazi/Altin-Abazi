@@ -20,3 +20,8 @@ public class ArrayExample2 {
         System.out.println("average : "+average);    
     }
 }
+
+//create three methods:
+//1. DISPLAY ARRAY
+//2. DISPLAY SUM
+//3. DISPLAY AVERAGE
