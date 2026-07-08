@@ -17,8 +17,6 @@ public class ArrayExample2 {
         }
         
         System.out.println("sum : "+sum);
-        System.out.println("average : "+average);
-
-    
+        System.out.println("average : "+average);    
     }
 }
