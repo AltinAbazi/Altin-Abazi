@@ -4,6 +4,10 @@ package inheritance;
 //  Create a subclass called Car that overrides 
 // the drive() method to print "Repairing a car"
 public class Vehicle {
+    public Vehicle(int vehicleId, String brand, String model, double rentalPricePerDay) {
+        //TODO Auto-generated constructor stub
+    }
+
     public void drive(){
         System.out.println("driving the car ");
     }
@@ -13,6 +17,11 @@ public class Vehicle {
         car.drive();
 
     }
+
+ public void displayInfo() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'displayInfo'");
+ }
 }
     class Car extends Vehicle{
        

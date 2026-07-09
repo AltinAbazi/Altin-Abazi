@@ -91,7 +91,8 @@ public class School_management_system {
                 new student("Veton",19,"133879"),
                 new teacher("Imer",30,"Structural Programming"),
             };
-                for(School_management_system person :directory){
+                for(int i =0 ;i<directory.length;i++){
+                   School_management_system person= directory[i];
                 person.introduce();
             }
         }
